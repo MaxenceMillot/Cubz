@@ -1157,6 +1157,12 @@ Light:
     type: 3}
   m_PrefabInstance: {fileID: 8695689880651982926}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &744215467 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497382150809932592, guid: a1c6ac7131ba9004e90cc58b7126f996,
+    type: 3}
+  m_PrefabInstance: {fileID: 1613881890323537675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &750721334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2950,6 +2956,11 @@ PrefabInstance:
       propertyPath: completeLevelUI
       value: 
       objectReference: {fileID: 1065594925}
+    - target: {fileID: 6457168039009661817, guid: b381232510a43ac49800da3670fcb3fe,
+        type: 3}
+      propertyPath: pauseLevelUI
+      value: 
+      objectReference: {fileID: 744215467}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b381232510a43ac49800da3670fcb3fe, type: 3}
 --- !u!1001 &6716668841210469197

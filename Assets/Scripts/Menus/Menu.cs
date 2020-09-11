@@ -37,7 +37,6 @@ public class Menu : MonoBehaviour
         bool isMuted = AudioManager.instance.SwitchMute();
         PlayerPrefs.SetInt(Constants.VOLUME_IS_MUTE_NAME, isMuted?1:0);
 
-        // TODO : change button text mute/unmute
         buttonMuteText.text = isMuted ? "Unmute" : "Mute";
     }
 }

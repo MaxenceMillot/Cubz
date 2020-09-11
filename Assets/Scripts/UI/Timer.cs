@@ -5,7 +5,8 @@ public class Timer : MonoBehaviour
 {
     public Text timer;
     public float targetTime = 3.0f;
-    bool shouldCount = false;
+
+    public bool shouldCount = false;
 
     // Update is called once per frame
     void Update()
@@ -29,5 +30,10 @@ public class Timer : MonoBehaviour
     public void StartTimer()
     {
         shouldCount = true;
+    }
+
+    public void StopTimer()
+    {
+        shouldCount = false;
     }
 }

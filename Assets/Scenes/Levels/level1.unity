@@ -2767,6 +2767,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 773395312}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &858930913 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7497382150809932592, guid: a1c6ac7131ba9004e90cc58b7126f996,
+    type: 3}
+  m_PrefabInstance: {fileID: 1613881890323537675}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &890209358
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6970,6 +6976,11 @@ PrefabInstance:
       propertyPath: completeLevelUI
       value: 
       objectReference: {fileID: 1065594925}
+    - target: {fileID: 6457168039009661817, guid: b381232510a43ac49800da3670fcb3fe,
+        type: 3}
+      propertyPath: pauseLevelUI
+      value: 
+      objectReference: {fileID: 858930913}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: b381232510a43ac49800da3670fcb3fe, type: 3}
@@ -6992,10 +7003,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 250121605511953594, guid: a1c6ac7131ba9004e90cc58b7126f996,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 250121605511953595, guid: a1c6ac7131ba9004e90cc58b7126f996,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613881889463618193, guid: a1c6ac7131ba9004e90cc58b7126f996,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1613881890464708123, guid: a1c6ac7131ba9004e90cc58b7126f996,
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613881890464708123, guid: a1c6ac7131ba9004e90cc58b7126f996,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1613881890464708127, guid: a1c6ac7131ba9004e90cc58b7126f996,
         type: 3}
@@ -7112,6 +7143,16 @@ PrefabInstance:
       propertyPath: end
       value: 
       objectReference: {fileID: 1645886780}
+    - target: {fileID: 1613881890918903590, guid: a1c6ac7131ba9004e90cc58b7126f996,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497382150809932592, guid: a1c6ac7131ba9004e90cc58b7126f996,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1c6ac7131ba9004e90cc58b7126f996, type: 3}
 --- !u!1001 &4934253711905114311
