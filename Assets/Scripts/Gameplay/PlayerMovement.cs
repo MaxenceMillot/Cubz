@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float sidewaysForce = 75f;
     public bool shouldRun = false;
     public bool isUnstopable = false;
+    public GameObject keysHelp;
     public float forwardSpeedMultiplicator = 1f;
     public Vector3 playerV3;
 
@@ -34,6 +35,10 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey("x"))
             isUnstopable = !isUnstopable;
+
+        // Hide Keys help after a distance
+        if (FindObjectOfType<PlayerMovement>().transform.position.z > 50)
+            keysHelp.SetActive(false);
     }
     void FixedUpdate()
     {
