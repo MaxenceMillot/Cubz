@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 87676260}
   m_Layer: 8
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2382,7 +2382,7 @@ PrefabInstance:
     - target: {fileID: 653203656238411319, guid: a8653643be15a3341bdef1545e3a81e8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 653203656238411319, guid: a8653643be15a3341bdef1545e3a81e8,
         type: 3}
@@ -2816,11 +2816,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 4934253712609096762, guid: 63f86d6d70aa7544a8be43aded1ad861,
-        type: 3}
-      propertyPath: forwardForce
-      value: 8000
       objectReference: {fileID: 0}
     - target: {fileID: 4934253712609096763, guid: 63f86d6d70aa7544a8be43aded1ad861,
         type: 3}

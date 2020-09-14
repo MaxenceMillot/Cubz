@@ -3,10 +3,11 @@
 public class PlayerMovement : MonoBehaviour
 {
     public Rigidbody rb;
-    public float forwardForce = 2000f;
-    public float sidewaysForce = 500f;
+    public float forwardForce = 20000f;
+    public float sidewaysForce = 75f;
     public bool shouldRun = false;
     public bool isUnstopable = false;
+    public float forwardSpeedMultiplicator = 1f;
     public Vector3 playerV3;
 
     // Start is called before the first frame update
@@ -36,22 +37,19 @@ public class PlayerMovement : MonoBehaviour
     }
     void FixedUpdate()
     {
-       
-        if (shouldRun)
-        {
-            // Used to give more spinning
-            //rb.maxAngularVelocity = 10;
+        if (!shouldRun)
+            return;
 
-            // Add a forward force
-            rb.AddForce(0, 0, forwardForce * Time.deltaTime);
+        // Used to give more spinning - unused
+        //rb.maxAngularVelocity = 10;
 
-            if (Input.GetKey(FindObjectOfType<GameManager>().rightKey))
-                rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+        // Add a forward force
+        rb.AddForce(0, 0, (forwardForce * forwardSpeedMultiplicator) * Time.deltaTime);
 
-            if (Input.GetKey(FindObjectOfType<GameManager>().leftKey))
-                rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-        }
+        if (Input.GetKey(FindObjectOfType<GameManager>().rightKey))
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+
+        if (Input.GetKey(FindObjectOfType<GameManager>().leftKey))
+            rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
     }
-
-
 }

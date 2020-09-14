@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         // Call Restart() after x time in seconds
-        // TODO : add "Game Over" message in UI
         Invoke("Restart", restartDelay);
     }
 
@@ -58,9 +57,9 @@ public class GameManager : MonoBehaviour
         if(isPaused)
             playerMovement.shouldRun = false;
 
-        // If game is paused, stop all player velocity
+        // If game is paused, stop Z player velocity (forward)
         // If game is unpaused, set back player velocity
-        playerMovement.rb.velocity = isPaused ? new Vector3(0, 0, 0) : playerMovement.playerV3;
+        playerMovement.rb.velocity = isPaused ? new Vector3(playerMovement.playerV3.x, playerMovement.playerV3.y, 0) : playerMovement.playerV3;
     }
 
     public void Restart()
