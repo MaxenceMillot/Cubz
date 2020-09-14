@@ -7,8 +7,8 @@ public class PlayerMovement : MonoBehaviour
     public float sidewaysForce = 75f;
     public bool shouldRun = false;
     public bool isUnstopable = false;
-    public GameObject keysHelp;
     public float forwardSpeedMultiplicator = 1f;
+    public float playerSpeedAfterCollision = 0.4f;
     public Vector3 playerV3;
 
     // Start is called before the first frame update
@@ -20,7 +20,6 @@ public class PlayerMovement : MonoBehaviour
     // Update handle inputs not related to physics
     private void Update()
     {
-
         if (Input.GetKeyDown(KeyCode.Escape))
             FindObjectOfType<GameManager>().PauseGame();
 
@@ -36,9 +35,7 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKey("x"))
             isUnstopable = !isUnstopable;
 
-        // Hide Keys help after a distance
-        if (FindObjectOfType<PlayerMovement>().transform.position.z > 50)
-            keysHelp.SetActive(false);
+        
     }
     void FixedUpdate()
     {
@@ -47,6 +44,9 @@ public class PlayerMovement : MonoBehaviour
 
         // Used to give more spinning - unused
         //rb.maxAngularVelocity = 10;
+
+        // If game is over, diminish forward speed
+        forwardSpeedMultiplicator = FindObjectOfType<GameManager>().isGameOver ? playerSpeedAfterCollision : forwardSpeedMultiplicator;
 
         // Add a forward force
         rb.AddForce(0, 0, (forwardForce * forwardSpeedMultiplicator) * Time.deltaTime);

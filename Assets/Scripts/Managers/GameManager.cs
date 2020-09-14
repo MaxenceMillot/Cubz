@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject completeLevelUI;
     public GameObject pauseLevelUI;
+    public bool isGameOver = false;
 
     private bool isPaused = false;
 
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         // Call Restart() after x time in seconds
+        isGameOver = true;
         Invoke("Restart", restartDelay);
     }
 

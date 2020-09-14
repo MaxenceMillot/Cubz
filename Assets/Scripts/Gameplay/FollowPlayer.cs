@@ -8,6 +8,7 @@ public class FollowPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = player.position + offset;
+        if(!FindObjectOfType<GameManager>().isGameOver)
+            transform.position = player.position + offset;
     }
 }

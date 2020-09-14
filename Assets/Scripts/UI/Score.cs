@@ -11,14 +11,18 @@ public class Score : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        distanceRemaining = (end.position.z - player.position.z);
-        if (player.position.z > 20 && distanceRemaining > 0)
+        if (FindObjectOfType<PlayerMovement>().shouldRun)
         {
-            FindObjectOfType<Timer>().timer.text = "";
-            score.text = (distanceRemaining).ToString("0");
-        }else
-        { // prevent score from showing negative number
-            score.text = "";
+            distanceRemaining = (end.position.z - player.position.z);
+            if (player.position.z > 20 && distanceRemaining > 0)
+            {
+                FindObjectOfType<Timer>().timer.text = "";
+                score.text = (distanceRemaining).ToString("0");
+            }
+            else
+            { // prevent score from showing negative number
+                score.text = "";
+            }
         }
     }
 }

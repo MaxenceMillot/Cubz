@@ -27,7 +27,7 @@ public class PlayerCollision : MonoBehaviour
             GetComponent<AudioSource>().Play();
             if (playerMovement.isUnstopable)
                 return;
-            playerMovement.enabled = false;
+            //playerMovement.shouldRun = false;
             FindObjectOfType<GameManager>().GameOver();
         }
     }
