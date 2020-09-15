@@ -131,7 +131,7 @@ MonoBehaviour:
   shouldRun: 0
   isUnstopable: 0
   forwardSpeedMultiplicator: 1
-  smoothSpeed: 10
+  playerSpeedAfterCollision: 0.4
   playerV3: {x: 0, y: 0, z: 0}
 --- !u!114 &4934253712609096761
 MonoBehaviour:
