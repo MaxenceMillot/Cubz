@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMPro;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
@@ -6,6 +7,7 @@ public class Score : MonoBehaviour
     public Transform player;
     public Transform end;
     public Text score;
+    public TextMeshProUGUI gameOver;
     public float distanceRemaining;
 
     // Update is called once per frame
@@ -29,5 +31,11 @@ public class Score : MonoBehaviour
                 score.text = "";
             }
         }
+
+        if (FindObjectOfType<GameManager>().isGameOver)
+            gameOver.text = "Game Over";
+        else
+            gameOver.text = "";
+
     }
 }
