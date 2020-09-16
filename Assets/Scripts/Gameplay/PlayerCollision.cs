@@ -25,9 +25,8 @@ public class PlayerCollision : MonoBehaviour
         if (collision.collider.tag == "Obstacle")
         {
             GetComponent<AudioSource>().Play();
-            if (playerMovement.isUnstopable)
+            if (playerMovement.isUnstoppable)
                 return;
-            //playerMovement.shouldRun = false;
             FindObjectOfType<GameManager>().GameOver();
         }
     }

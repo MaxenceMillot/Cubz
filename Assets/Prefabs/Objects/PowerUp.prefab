@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4934253712609096752
+--- !u!1 &5904475084870485414
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4934253712609096763}
-  - component: {fileID: 4934253712609096764}
-  - component: {fileID: 4934253712609096765}
-  - component: {fileID: 4934253712609096760}
-  - component: {fileID: 4934253712609096767}
-  - component: {fileID: 4934253712609096762}
-  - component: {fileID: 4934253712609096761}
-  - component: {fileID: 1885314980013131926}
+  - component: {fileID: 5904475084870485433}
+  - component: {fileID: 5904475084870485434}
+  - component: {fileID: 5904475084870485435}
+  - component: {fileID: 5904475084870485412}
+  - component: {fileID: 5904475084870485413}
+  - component: {fileID: -6798836027178972879}
+  - component: {fileID: 8948416587872788809}
   m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
+  m_Name: PowerUp
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4934253712609096763
+--- !u!4 &5904475084870485433
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
+  m_GameObject: {fileID: 5904475084870485414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 10, y: 2, z: 0}
+  m_LocalScale: {x: 0.93092823, y: 0.8434098, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4934253712609096764
+--- !u!33 &5904475084870485434
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &4934253712609096765
+  m_GameObject: {fileID: 5904475084870485414}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &5904475084870485435
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
+  m_GameObject: {fileID: 5904475084870485414}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,82 +83,66 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!135 &4934253712609096760
-SphereCollider:
+--- !u!136 &5904475084870485412
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
-  m_Material: {fileID: 13400000, guid: 479e1ea5a75bcab40a2d8d15e8f10476, type: 2}
-  m_IsTrigger: 0
+  m_GameObject: {fileID: 5904475084870485414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.8
+  m_Height: 3
+  m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &4934253712609096767
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
-  serializedVersion: 2
-  m_Mass: 0.4
-  m_Drag: 2
-  m_AngularDrag: 0
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 1
---- !u!114 &4934253712609096762
+--- !u!114 &5904475084870485413
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
+  m_GameObject: {fileID: 5904475084870485414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1464cb3df967244c8f21b5f46943499, type: 3}
+  m_Script: {fileID: 11500000, guid: c96027471ea4a48498cc89e926a2785d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 4934253712609096767}
-  forwardForce: 10000
-  sidewaysForce: 80
-  shouldRun: 0
-  isUnstoppable: 0
-  defaultForwardSpeedMultiplicator: 1
-  forwardSpeedMultiplicator: 1
-  playerSpeedAfterCollision: 0.4
-  playerV3: {x: 0, y: 0, z: 0}
---- !u!114 &4934253712609096761
+  pickupEffect: {fileID: 0}
+  duration: 8
+  sizeMultiplier: 0.5
+  speedMultiplier: 0.75
+  infoUI: {fileID: 0}
+  reducedObstacleMass: 0.2
+  originalObstacleMass: -1
+--- !u!114 &-6798836027178972879
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
+  m_GameObject: {fileID: 5904475084870485414}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eed4a529100a22e498312a17a7fb9891, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c9f3f131bf65af4c8c1834bedf1a890, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMovement: {fileID: 4934253712609096762}
---- !u!82 &1885314980013131926
+  amplitude: 0.2
+  frequency: 1.4
+--- !u!82 &8948416587872788809
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4934253712609096752}
+  m_GameObject: {fileID: 5904475084870485414}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a26cadfb996a3094984c4088d7fc165d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 47576507c7044cd4a8cea1def54d0e26, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -203,7 +186,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
