@@ -7,7 +7,7 @@ public class Score : MonoBehaviour
     public Transform player;
     public Transform end;
     public Text score;
-    public TextMeshProUGUI gameOver;
+    public TextMeshProUGUI infoUI;
     public float distanceRemaining;
 
     // Update is called once per frame
@@ -33,9 +33,6 @@ public class Score : MonoBehaviour
         }
 
         if (FindObjectOfType<GameManager>().isGameOver)
-            gameOver.text = "Game Over";
-        else
-            gameOver.text = "";
-
+            infoUI.text = "Game Over";
     }
 }

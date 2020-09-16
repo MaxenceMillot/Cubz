@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     {
         FindObjectOfType<PlayerMovement>().shouldRun = false;
         completeLevelUI.SetActive(true);
+        
     }
 
     public void PauseGame()
@@ -58,10 +59,13 @@ public class GameManager : MonoBehaviour
         // Stop player movements and input listening
         if(isPaused)
             playerMovement.shouldRun = false;
+        
+        // Pause Gravity on pause (prevent flying player from falling
+        playerMovement.rb.useGravity = isPaused ? false:true;
 
         // If game is paused, stop Z player velocity (forward)
         // If game is unpaused, set back player velocity
-        playerMovement.rb.velocity = isPaused ? new Vector3(playerMovement.playerV3.x, playerMovement.playerV3.y, 0) : playerMovement.playerV3;
+        playerMovement.rb.velocity = isPaused ? new Vector3(0, 0, 0) : playerMovement.playerV3;
     }
 
     public void Restart()
