@@ -52,7 +52,7 @@ public class PowerUp : MonoBehaviour
                 }
 
                 // PowerUp UI notification
-                infoUI.text = "Unstoppable";
+                infoUI.text = "Unstoppable !";
 
                 // Hide PowerUp from scene
                 GetComponent<MeshRenderer>().enabled = false;
@@ -78,7 +78,7 @@ public class PowerUp : MonoBehaviour
                 // PowerUp change
                 playerMovement.forwardSpeedMultiplicator = speedMultiplier;
                 // PowerUp UI notification
-                infoUI.text = "Slower";
+                infoUI.text = "Slower !";
                 // Hide PowerUp from scene
                 GetComponent<MeshRenderer>().enabled = false;
                 GetComponent<Collider>().enabled = false;
@@ -93,7 +93,7 @@ public class PowerUp : MonoBehaviour
                 // PowerUp change
                 player.transform.localScale *= sizeMultiplier;
                 // PowerUp UI notification
-                infoUI.text = "Smaller";
+                infoUI.text = "Smaller !";
                 // Hide PowerUp from scene
                 GetComponent<MeshRenderer>().enabled = false;
                 GetComponent<Collider>().enabled = false;

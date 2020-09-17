@@ -12,4 +12,9 @@ public class LevelSelection : MonoBehaviour
     {
         SceneManager.LoadScene(level);
     }
+
+     public void SelectInfiniteMode()
+    {
+        SceneManager.LoadScene(9);
+    }
 }

@@ -5,5 +5,6 @@ using UnityEngine.Audio;
 public enum PowerUps{
     Unstopable = 1,
     SlowMode = 2,
-    SizeDown = 3
+    SizeDown = 3,
+    Bouncy = 4
 }

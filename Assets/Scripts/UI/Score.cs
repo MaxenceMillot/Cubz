@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
         if (FindObjectOfType<PlayerMovement>().shouldRun)
         {
             distanceRemaining = (end.position.z - player.position.z);
-            if (player.position.z > 20 && distanceRemaining > 0)
+            if (player.position.z > 20 && distanceRemaining >= 0)
             {
                 // If game is not over, write new distance
                 // Otherwise, keep last score
