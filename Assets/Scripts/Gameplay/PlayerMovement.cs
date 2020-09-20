@@ -26,17 +26,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb.position.y < 0f)
             FindObjectOfType<GameManager>().GameOver();
-
-        if (!shouldRun)
-            return;
-
-        if (Input.GetKey("w"))
-            FindObjectOfType<GameManager>().GameWin();
-
-        if (Input.GetKey("x"))
-            isUnstoppable = !isUnstoppable;
-
-        
     }
     void FixedUpdate()
     {

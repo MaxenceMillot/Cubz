@@ -77,9 +77,6 @@ public class PowerUp : MonoBehaviour
                     GetComponent<MeshRenderer>().enabled = false;
                     GetComponent<Collider>().enabled = false;
 
-                    // PowerUp Soon to end
-                    
-
                     // Duration wait (coroutine)
                     yield return PowerUpTimer(duration);
 

@@ -38,7 +38,7 @@ public class ObstacleSpawner : MonoBehaviour
         lastObstaclePositionZ = player.position.z + Random.Range(75.00f, 100.00f);
         // TODO : Create a list of Objects containing prefab, type and position
         // TODO 2 : then, use this to regulate number of identical objects (ex: every 15-20 obstacle add a powerup/ramp
-        for (int i = 0; i < 17; i++)
+        for (int i = 0; i < Random.Range(17, 19); i++)
         {
             int randomObjectIndex = (int)Random.Range(0f, obstacles.Length-1);
 
@@ -47,7 +47,7 @@ public class ObstacleSpawner : MonoBehaviour
             if (!obstacles[randomObjectIndex].GetComponentInChildren<PowerUp>())
                 randomPositionY = Random.Range(1.00f, 10.00f);
 
-            float randomPositionZ = lastObstaclePositionZ + Random.Range(30.00f, 75.00f);
+            float randomPositionZ = lastObstaclePositionZ + Random.Range(25.00f, 75.00f);
 
             GameObject lastPrefab = Instantiate(obstacles[randomObjectIndex], new Vector3(0, randomPositionY, randomPositionZ), Quaternion.identity);
 
