@@ -1,6 +1,6 @@
 # Cubz
 ## Game made with Unity in C#
---------
+
 **Cubz** is a 3D runner where you control a green ball and need to avoid blue cubes.
 
 The game is based on the tutorial of **Brackeys** (Cubethon) which you can find on youtube.
