@@ -86,7 +86,7 @@ public class PowerUp : MonoBehaviour
                     // reset Obstacles mass
                     foreach (GameObject obstacle in obstacles)
                     {
-                        if (obstacle.GetComponent<Rigidbody>())
+                        if (obstacle.GetComponent<Rigidbody>() && obstacle.GetComponent<Rigidbody>() != null)
                             obstacle.GetComponent<Rigidbody>().mass = originalObstacleMass;
                     }
 
@@ -123,21 +123,6 @@ public class PowerUp : MonoBehaviour
                     // PowerUp UI notification
                     infoUI.text = "";
                     break;
-                //case (int)PowerUps.SpeedBoost:
-                //    // PowerUp change
-                //    playerMovement.forwardSpeedMultiplicator = fasterMultiplier;
-                //    // PowerUp UI notification
-                //    infoUI.text = "Faster !";
-                //    // Hide PowerUp from scene
-                //    GetComponent<MeshRenderer>().enabled = false;
-                //    GetComponent<Collider>().enabled = false;
-                //    // Duration wait (coroutine)
-                //    yield return new WaitForSeconds(duration);
-                //    // PowerUp Reverse 
-                //    playerMovement.forwardSpeedMultiplicator = playerMovement.defaultForwardSpeedMultiplicator;
-                //    // PowerUp UI notification
-                //    infoUI.text = "";
-                //    break;
                 default:
                     Debug.LogError("Couldn't find PowerUp - Switch default");
                     break;
