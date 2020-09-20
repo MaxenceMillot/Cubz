@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject completeLevelUI;
     public GameObject pauseLevelUI;
     public bool isGameOver = false;
+    public bool isInfiniteMode = false;
 
     private bool isPaused = false;
 
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
     {
         // Call Restart() after x time in seconds
         isGameOver = true;
+        if (isInfiniteMode)
+            WriteBestScore((int)FindObjectOfType<PlayerMovement>().transform.position.z/10);
         Invoke("Restart", restartDelay);
     }
 
@@ -73,5 +76,11 @@ public class GameManager : MonoBehaviour
         FindObjectOfType<PlayerMovement>().shouldRun = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         FindObjectOfType<Timer>().StartTimer();
+    }
+
+    private void WriteBestScore(int score)
+    {
+        if(score > PlayerPrefs.GetInt(Constants.BEST_SCORE))
+            PlayerPrefs.SetInt(Constants.BEST_SCORE, score);
     }
 }

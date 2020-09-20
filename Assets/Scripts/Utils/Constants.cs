@@ -19,4 +19,7 @@ public static class Constants
     public const string GENERAL_VOLUME_NAME = "generalVolume";
     public const float GENERAL_VOLUME_VALUE = 80f;
 
+    // Best Score
+    public const string BEST_SCORE = "bestScore";
+
 }

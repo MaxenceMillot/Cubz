@@ -52,17 +52,9 @@ public class Settings : MonoBehaviour
         // AND the user presses a key 
         if (isWaitingForKey && keyEvent.isKey)
         {
-            //if the key is already set
-            if(keyEvent.keyCode == gameManager.leftKey || keyEvent.keyCode == gameManager.rightKey)
-            {
-                textFeedback.text = "This key is already used";
-            }
-            else
-            {
-                //Assigns newKey to the key user presses
-                newKey = keyEvent.keyCode;
-                isWaitingForKey = false;
-            }
+            //Assigns newKey to the key user presses
+            newKey = keyEvent.keyCode;
+            isWaitingForKey = false;
         }
     }
     public void MainMenu()

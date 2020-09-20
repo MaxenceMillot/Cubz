@@ -17,7 +17,7 @@ public class FallTrigger : MonoBehaviour
     void SpawnPrefab()
     {
         float playerPosition = FindObjectOfType<Score>().player.position.z;
-        float randomPosition = playerPosition + Random.Range(100.0f, 700.0f);
-        Instantiate(prefab, new Vector3(Random.Range(-6.0f, 6.0f), Random.Range(10.0f, 50.0f), randomPosition), Quaternion.identity);
+        float randomPositionZ = playerPosition + Random.Range(100.0f, 700.0f);
+        Instantiate(prefab, new Vector3(Random.Range(-6.0f, 6.0f), Random.Range(10.0f, 50.0f), randomPositionZ), Quaternion.identity);
     }
 }
