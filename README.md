@@ -7,7 +7,7 @@ The game is based on the tutorial of **Brackeys** (Cubethon) which you can find 
 
 Made with **Unity**
 
-**Features : **
+**Features :**
 
 * 7 handcrafted levels
 * Ramps & aerial obstacles
