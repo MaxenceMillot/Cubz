@@ -1,5 +1,34 @@
 # Cubz
-Game made with Unity in C# - Based on Brackeys tutorial
+## Game made with Unity in C#
 --------
-https://brackeys.com/
-https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA
+**Cubz** is a 3D runner where you control a green ball and need to avoid blue cubes.
+
+The game is based on the tutorial of **Brackeys** (Cubethon) which you can find on youtube.
+
+Made with **Unity**
+
+**Features : **
+
+* 7 handcrafted levels
+* Ramps & aerial obstacles
+* Power-ups
+* Infinite mode
+  * 50+ assets spawning at random pace
+
+The game is playable for **free** at : https://silenteius.itch.io/cubz
+
+---
+
+This is my first game aver and it was created in 2 weeks. 
+
+Reviews and tips are welcome !
+
+Have fun ! 
+
+## Credits
+* Tutorial
+  * https://brackeys.com/
+  * https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA
+* Audio sources
+  * https://incompetech.com/
+  * https://freesfx.co.uk/
