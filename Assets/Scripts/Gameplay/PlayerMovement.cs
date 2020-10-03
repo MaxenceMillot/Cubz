@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
     public float playerSpeedAfterCollision = 0.4f;
     public Vector3 playerV3;
 
+    public bool shoudGoLeft = false;
+    public bool shoudGoRight = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,9 +25,6 @@ public class PlayerMovement : MonoBehaviour
     // Update handle inputs not related to physics
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            FindObjectOfType<GameManager>().PauseGame();
-
         if (rb.position.y < 0f)
             FindObjectOfType<GameManager>().GameOver();
     }
@@ -47,10 +48,10 @@ public class PlayerMovement : MonoBehaviour
         if (gameManager.isGameOver)
             return;
 
-        if (Input.GetKey(gameManager.rightKey))
-            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
-
-        if (Input.GetKey(gameManager.leftKey))
+        if(shoudGoLeft)
             rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
+
+        if(shoudGoRight)
+            rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
     }
 }
