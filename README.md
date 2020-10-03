@@ -14,6 +14,7 @@ Made with **Unity**
 * Power-ups
 * Infinite mode
   * 50+ assets spawning at random pace
+* Android version available on the "android" branch
 
 The game is playable for **free** at : https://silenteius.itch.io/cubz
 
