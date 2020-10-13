@@ -21,6 +21,6 @@ public class LevelSelection : MonoBehaviour
     }
      public void SelectInfiniteMode()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(11);
     }
 }

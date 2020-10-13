@@ -24,17 +24,17 @@ public class Menu : MonoBehaviour
 
     public void LevelSelection()
     {
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(12);
     }
 
     public void Settings()
     {
-        SceneManager.LoadScene(11);
+        SceneManager.LoadScene(13);
     }
 
     public void Credits()
     {
-        SceneManager.LoadScene(8);
+        SceneManager.LoadScene(10);
     }
 
     public void SwitchMute()

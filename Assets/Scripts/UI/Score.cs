@@ -23,7 +23,7 @@ public class Score : MonoBehaviour
                 if (!FindObjectOfType<GameManager>().isGameOver)
                 {
                     FindObjectOfType<Timer>().timer.text = "";
-                    score.text = (distanceRemaining).ToString("0");
+                    score.text = (distanceRemaining/10).ToString("0");
                 }
             }
             else

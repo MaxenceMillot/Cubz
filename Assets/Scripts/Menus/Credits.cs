@@ -20,6 +20,6 @@ public class Credits : MonoBehaviour
 
     public void InfiniteMode()
     {
-        SceneManager.LoadScene(9);
+        SceneManager.LoadScene(11);
     }
 }
