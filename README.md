@@ -17,7 +17,9 @@ Made with **Unity**
 * Android version available on the "android" branch
 
 The game is playable for **free** at : https://silenteius.itch.io/cubz
-Now available on the Playstore : https://play.google.com/store/apps/details?id=com.Silenteius.Cubz (android 10+)
+
+And on the playstore : https://play.google.com/store/apps/details?id=com.Silenteius.Cubz (android 10+)
+
 ---
 
 This is my first game ever and it was created in 2 weeks. 
