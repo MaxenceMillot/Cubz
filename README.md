@@ -16,6 +16,7 @@ Made with **Unity**
   * 50+ assets spawning at random pace
 * Android version available on the "android" branch
 
+---
 The game is playable for **free** at : https://silenteius.itch.io/cubz
 
 And on the playstore : https://play.google.com/store/apps/details?id=com.Silenteius.Cubz (android 10+)
