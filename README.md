@@ -23,10 +23,6 @@ And on the playstore : https://play.google.com/store/apps/details?id=com.Silente
 
 ---
 
-This is my first game ever and it was created in 2 weeks. 
-
-Reviews and tips are welcome !
-
 Have fun ! 
 
 ## Credits
