@@ -19,10 +19,6 @@ The game is playable for **free** at : https://silenteius.itch.io/cubz
 
 ---
 
-This is my first game ever and it was created in 2 weeks. 
-
-Reviews and tips are welcome !
-
 Have fun ! 
 
 ## Credits
