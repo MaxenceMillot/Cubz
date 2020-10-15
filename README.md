@@ -9,7 +9,7 @@ Made with **Unity**
 
 **Features :**
 
-* 7 handcrafted levels
+* 9 handcrafted levels
 * Ramps & aerial obstacles
 * Power-ups
 * Infinite mode
